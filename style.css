@@ -9,7 +9,8 @@ body {
   margin: 100px auto;
   padding: 30px;
   font-size: 12px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.2;
 }
 
@@ -65,6 +66,7 @@ body {
   border-radius: 10px;
   padding: 5px;
   color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card__header {
@@ -80,7 +82,7 @@ body {
 
 .card__lead {
   font-size: 1.1rem;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 p {
@@ -89,29 +91,35 @@ p {
 
 /* clifford's card styles */
 .card-clifford {
-  background-color: rgb(157, 58, 249);
+  background-color: #733fc8;
   width: 64%;
   height: 100%;
 }
 
 .card-clifford .card__quote {
-  color: rgba(240, 248, 255, 0.591);
+  color: rgba(240, 248, 255, 0.9);
+}
+.card-clifford .card__title {
+  color: #fff;
 }
 
 /* jonathan's card styles */
 .card-jonathan {
-  background-color: rgb(61, 57, 54);
+  background-color: #49556b;
   width: 34%;
   height: 100%;
 }
 
 .card-jonathan .card__quote {
-  color: rgba(240, 248, 255, 0.591);
+  color: rgba(240, 248, 255, 0.9);
 }
 
+.card-jonathan .card__title {
+  color: #fff;
+}
 /* jeannette's card styles */
 .card-jeannet {
-  background-color: rgb(255, 212, 191);
+  background-color: #ffffff;
   color: #030303;
   width: 34%;
   height: 100%;
@@ -123,20 +131,27 @@ p {
 
 /* kira's card styles */
 .card-kira {
-  background-color: rgb(47, 3, 12);
+  background-color: #ffffff;
   height: 100%;
   width: 100%;
 }
 
-.card-kira .card__quote {
-  color: rgba(255, 255, 255, 0.591);
+.card-kira,
+.card__quote,
+.card__title {
+  color: #222222;
 }
 
 /* patrick's card styles */
 .card-patrick {
-  background-color: rgb(16, 19, 33);
+  background-color: #19212e;
   height: 100%;
   width: 64%;
+
+  .card__title,
+  .card__quote {
+    color: rgba(240, 248, 255, 0.9);
+  }
 }
 
 /* responsive styles for tablets (width <= 1024px) */
