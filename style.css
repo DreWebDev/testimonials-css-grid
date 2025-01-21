@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aliceblue;
+  margin: 100px auto;
+  padding: 30px;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.2;
+}
+
+/* main container for testimonials */
+.testimonials {
+  display: flex;
+  gap: 18px;
+  width: 80vw;
+  margin: 0 auto;
+  height: 70vh;
+  flex-direction: row;
+}
+
+/* left section of testimonials */
+.testimonial-left {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* top group of cards in the left section */
+.testimonial-left-top {
+  display: flex;
+  justify-content: space-between;
+  height: 48%;
+}
+
+/* bottom group of cards in the left section */
+.testimonial-left-bottom {
+  display: flex;
+  height: 48%;
+  justify-content: space-between;
+}
+
+/* right section of testimonials */
+.testimonial-right {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styles for card titles */
+.card__title {
+  margin-left: 10px;
+}
+
+/* shared styles for cards */
+.card {
+  border-radius: 10px;
+  padding: 5px;
+  color: #fff;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.card__img {
+  border-radius: 50%;
+  border: 3px solid rgb(235, 0, 235);
+}
+
+.card__lead {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0 10px;
+}
+
+/* clifford's card styles */
+.card-clifford {
+  background-color: rgb(157, 58, 249);
+  width: 64%;
+  height: 100%;
+}
+
+.card-clifford .card__quote {
+  color: rgba(240, 248, 255, 0.591);
+}
+
+/* jonathan's card styles */
+.card-jonathan {
+  background-color: rgb(61, 57, 54);
+  width: 34%;
+  height: 100%;
+}
+
+.card-jonathan .card__quote {
+  color: rgba(240, 248, 255, 0.591);
+}
+
+/* jeannette's card styles */
+.card-jeannet {
+  background-color: rgb(255, 212, 191);
+  color: #030303;
+  width: 34%;
+  height: 100%;
+}
+
+.card-jeannet .card__quote {
+  color: rgba(0, 0, 0, 0.591);
+}
+
+/* kira's card styles */
+.card-kira {
+  background-color: rgb(47, 3, 12);
+  height: 100%;
+  width: 100%;
+}
+
+.card-kira .card__quote {
+  color: rgba(255, 255, 255, 0.591);
+}
+
+/* patrick's card styles */
+.card-patrick {
+  background-color: rgb(16, 19, 33);
+  height: 100%;
+  width: 64%;
+}
+
+/* responsive styles for tablets (width <= 1024px) */
+@media (max-width: 1024px) {
+  .testimonials {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
+  .testimonial-left,
+  .testimonial-right {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+
+  .testimonial-left-top,
+  .testimonial-left-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* responsive styles for mobile devices (width <= 768px) */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  p,
+  .card__lead {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .testimonials {
+    gap: 10px;
+  }
+
+  .card {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .card__img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card__header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__title {
+    margin-left: 0;
+    text-align: center;
+  }
+}
